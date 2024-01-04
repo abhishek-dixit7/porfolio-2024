@@ -4,9 +4,11 @@ import { Navbar, Footer } from '../components';
 
 function Layout() {
   return (
-    <div className="min-h-screen mt-16 mx-16">
+    <div className="mt-32 mx-32">
       <Navbar />
-      <Outlet />
+      <div className="min-h-96 my-4">
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );
