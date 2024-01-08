@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Playlist from '../components/Playlist/Playlist';
+import { useLoaderData } from 'react-router-dom';
+import Experience from '../components/Experience/Experience';
+import Knoledge from '../components/Knowledge/Knoledge';
 
 function About() {
-  return <div>About: WIP</div>;
+  return (
+    <>
+      <Experience />
+      <Knoledge />
+      <Playlist />
+    </>
+  );
 }
 
 export default About;

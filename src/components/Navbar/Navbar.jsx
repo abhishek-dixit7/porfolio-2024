@@ -11,12 +11,12 @@ function Navbar() {
 
   return (
     <div className="flex justify-between items-center">
-      <div className="">
+      <div>
         <NavLink to="/">
           <img
             src={theme === 'dark' ? lightLogo : darkLogo}
             alt="logo"
-            className="rounded-xl w-8 "
+            className="rounded-xl w-10 md:hover:animate-spin-slow"
           />
         </NavLink>
       </div>

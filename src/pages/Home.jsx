@@ -2,7 +2,7 @@ import React from 'react';
 
 function Home() {
   return (
-    <div className="my-16">
+    <div className="my-16 text-lg">
       <h1 className="text-2xl mb-4">
         Unfurl the layers of code and creativity that bring these pixels to
         life.{' '}
@@ -12,11 +12,11 @@ function Home() {
         monument to collaboration and innovation.
       </h1>
 
-      <p className="text-lg mx-4 ">
+      <p className="text-2xl mx-4 mb-1">
         Venture beyond the surface. Within these lines, you'll find:
       </p>
 
-      <ul className="list-none hover:list-disc mx-8 mb-4">
+      <ul className="text-lg list-none hover:list-disc mx-8 mb-4">
         <li>
           Front-end artistry: Where vibrant pixels dance to the rhythm of
           design, crafting interfaces that captivate and convert.
