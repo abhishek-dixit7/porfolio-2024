@@ -19,7 +19,7 @@ function Cards() {
             alt="todo-theme-switcher"
             className="absolute h-full w-full left-0 top-0 object-cover hover:blur-sm  rounded-md"
           />
-          <div className="ml-4 mt-28 md:ml-12 lg:ml-12 md:mt-60 lg:mt-60 opacity=0 translate-y-10 transition opacity hover:opacity-100 ">
+          <div className="ml-4 mt-28 md:ml-12 lg:ml-12 md:mt-60 lg:mt-60 opacity-0 translate-y-10 transition opacity hover:opacity-100 ">
             <h1 className="text-base md:text-xl lg:text-xl font-normal mb-2 text-white">
               {project.name}
             </h1>
