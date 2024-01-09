@@ -8,3 +8,19 @@ export const env = {
   spotifyClientSecret: import.meta.env.VITE_SPOTIFY_CLIENT_SECRET,
   spotifyUserId: import.meta.env.VITE_SPOTIFY_USER_ID,
 };
+
+export const browserless = {
+  url: 'https://chrome.browserless.io/screenshot',
+  apiKey: import.meta.env.VITE_BROWSERLESS_API_KEY,
+};
+export const projects = [
+  {
+    url: 'https://todo-theme-switcher.netlify.app/',
+    name: 'Todo Theme Switcher',
+    techStack: ['React', 'Redux', 'Tailwind', 'Html', 'CSS'],
+  },
+  {
+    url: 'https://todo-theme-switcher.netlify.app/',
+    name: 'Todo Theme Switcher',
+  },
+];
