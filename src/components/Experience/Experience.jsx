@@ -3,7 +3,7 @@ import React from 'react';
 function Experience() {
   return (
     <section className="my-12">
-      <h2 className="text-5xl mb-8 text-center hover:text-red-600">
+      <h2 className="text-4xl mb-8 text-center hover:text-red-600">
         Experience
       </h2>
 

@@ -6,7 +6,7 @@ function Layout() {
   return (
     <div className="my-32 mx-32">
       <Navbar />
-      <div className="min-h-96 my-4">
+      <div className="my-4">
         <Outlet />
       </div>
       <Footer />
