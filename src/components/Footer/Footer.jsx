@@ -7,7 +7,7 @@ import { githubUrl, linkedinUrl, twitterUrl } from '../../constants/constants';
 function Footer() {
   const { theme } = useTheme();
   return (
-    <div className="flex gap-4 ">
+    <div className="flex gap-4 justify-center items-center md:justify-normal lg:justify-normal md:items-start lg:items-start">
       {theme === 'dark' ? (
         <>
           <Link to={linkedinUrl}>

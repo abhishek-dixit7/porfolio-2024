@@ -10,18 +10,18 @@ function Navbar() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-around md:justify-between lg:justify-between items-center text-xl">
       <div>
         <NavLink to="/">
           <img
             src={theme === 'dark' ? lightLogo : darkLogo}
             alt="logo"
-            className="rounded-xl w-10 md:hover:animate-spin-slow"
+            className="rounded-xl w-7 md:w-10 lg:w-10 md:hover:animate-spin-slow"
           />
         </NavLink>
       </div>
-      <div className="flex gap-8 justify-between items-center">
-        <div className="flex gap-8  text-xl">
+      <div className="flex gap-4 md:gap-8 lg:gap-8 justify-around md:justify-between lg:justify-between items-center">
+        <div className="flex gap-4 md:gap-8 lg:gap-8 ">
           <NavLink
             to="/about"
             className={({ isActive }) => `${isActive ? 'hidden' : ''}`}
@@ -41,7 +41,7 @@ function Navbar() {
             Contact
           </NavLink>
         </div>
-        <div className="cursor-pointer" onClick={toggleTheme}>
+        <div className="cursor-pointer " onClick={toggleTheme}>
           {theme === 'dark' ? <ThemeLight /> : <ThemeDark />}
         </div>
       </div>
