@@ -20,7 +20,8 @@ export const projects = [
     techStack: ['React', 'Redux', 'Tailwind', 'Html', 'CSS'],
   },
   {
-    url: 'https://todo-theme-switcher.netlify.app/',
-    name: 'Todo Theme Switcher',
+    url: 'https://praizer.netlify.app/',
+    name: 'Praizer',
+    techStack: ['React', 'React-Bootstrap', '.NET', 'Html', 'CSS'],
   },
 ];

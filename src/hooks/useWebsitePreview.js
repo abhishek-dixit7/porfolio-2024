@@ -30,18 +30,15 @@ const useWebsitePreview = url => {
 
         const binaryData = new Uint8Array(response.data);
         const base64Image = btoa(String.fromCharCode.apply(null, binaryData));
-        localStorage.setItem(
-          'preview',
-          `data:image/jpeg;base64,${base64Image}`,
-        );
+        localStorage.setItem(url, `data:image/jpeg;base64,${base64Image}`);
 
         previewRef.current.src = `data:image/jpeg;base64,${base64Image}`;
       } catch (error) {
         console.error('Error capturing screenshot:', error.message);
       }
     };
-
-    capturePreview();
+    if (!localStorage.getItem(url)) capturePreview();
+    else previewRef.current.src = localStorage.getItem(url);
   }, [url]);
 
   return previewRef;

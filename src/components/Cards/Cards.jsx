@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Cards() {
   return (
-    <div className="my-8 md:my-12 lg:my-12 md:mx-32 lg:mx-32 grid md:grid-cols-2 lg:grid-cols-2 gap-4 place-content-center place-items-center">
+    <div className="my-8 md:my-12 lg:my-12 lg:mx-64 grid lg:grid-cols-2 gap-8 place-content-center place-items-center">
       {projects.map(project => (
         <Link
           key={Math.random() * 100}
@@ -13,17 +13,15 @@ function Cards() {
           className="relative w-[20rem] h-[15rem] md:w-[32rem] md:h-[24rem] lg:w-[32rem] lg:h-[24rem] "
         >
           <img
-            /*ref={useWebsitePreview(project.url)}*/ src={localStorage.getItem(
-              'preview',
-            )}
+            ref={useWebsitePreview(project.url)}
             alt="todo-theme-switcher"
-            className="absolute h-full w-full left-0 top-0 object-cover hover:blur-sm  rounded-md"
+            className="object-cover hover:blur-sm rounded-md"
           />
-          <div className="ml-4 mt-28 md:ml-12 lg:ml-12 md:mt-60 lg:mt-60 opacity-0 translate-y-10 transition opacity hover:opacity-100 ">
-            <h1 className="text-base md:text-xl lg:text-xl font-normal mb-2 text-white">
+          <div className="absolute w-full h-full top-0 left-0 flex flex-col justify-end items-center gap-6  md:opacity-0 lg:opacity-0 transition duration-[180ms] ease-in hover:opacity-100 hover:bg-black/[0.8] bg-black/[0.4] md:bg-none lg:bg-none">
+            <h1 className="text-xl font-bold md:text-xl lg:text-xl text-white">
               {project.name}
             </h1>
-            <div className="flex gap-2 md:mt-4 lg:mt-4">
+            <div className="flex gap-2 mb-8 md:mb-16 lg:mb-16">
               {project.techStack &&
                 project.techStack.map(tech => (
                   <span
