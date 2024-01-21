@@ -9,7 +9,7 @@ function Playlist() {
   return loader ? (
     <div className="text-center">Loading...</div>
   ) : (
-    <section className="my-12 text-sm md:text-lg lg:text-lg">
+    <section className="mt-12 mb-8 text-sm md:text-lg lg:text-lg">
       <h2 className="text-2xl md:text-4xl lg:text-4xl mb-8 text-center hover:text-red-600">
         My Playlists
       </h2>

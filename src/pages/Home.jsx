@@ -1,4 +1,5 @@
 import React from 'react';
+import Goto from '../components/Goto/Goto';
 
 function Home() {
   return (
@@ -51,6 +52,7 @@ function Home() {
       <p className="mb-4 hover:text-blue-500">
         Ready to embark on this adventure? Let's start exploring.
       </p>
+      <Goto text="Know more about me" to="/about" />
     </div>
   );
 }

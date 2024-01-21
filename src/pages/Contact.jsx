@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ContactForm from '../components/ContactForm/ContactForm';
-import RightArrow from '../components/Icons/RightArrow';
+import Goto from '../components/Goto/Goto';
 
 function Contact() {
   return (
@@ -21,15 +21,7 @@ function Contact() {
           </Link>
         </p>
         <ContactForm />
-        <Link
-          to="/"
-          className="relative md:hover:text-blue-600 lg:hover:text-blue-600"
-        >
-          Go back to Home
-          <span className="absolute mx-2 pt-0.5 md:pt-1 lg:pt-1 md:animate-forward lg:animate-forward">
-            <RightArrow />
-          </span>
-        </Link>
+        <Goto text="Go back to Home" to="/" />
       </div>
     </>
   );
