@@ -1,12 +1,14 @@
 import React from 'react';
 import Goto from '../components/Goto/Goto';
+import useMobileNav from '../context/MobileNavContext';
+import NavSection from '../components/Navbar/NavSection';
 
 function Home() {
   return (
     <div className="my-16 text-sm md:text-lg lg:text-lg">
       <h1 className="text-sm md:text-2xl lg:text-2xl mb-4">
         Unfurl the layers of code and creativity that bring these pixels to
-        life.{' '}
+        life.
         <span className="text-2xl md:text-4xl lg:text-4xl hover:text-blue-500">
           I'm Abhishek Dixit
         </span>

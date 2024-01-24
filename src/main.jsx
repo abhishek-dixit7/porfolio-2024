@@ -8,6 +8,7 @@ import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
 import Projects from './pages/Projects.jsx';
 import ThemeProvider from './context/ThemeProvider.jsx';
+import MobileNavProvider from './context/MobileNavProvider.jsx';
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>
   <ThemeProvider>
-    <RouterProvider router={router} />
+    <MobileNavProvider>
+      <RouterProvider router={router} />
+    </MobileNavProvider>
   </ThemeProvider>,
   // </React.StrictMode>,
 );
